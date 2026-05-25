@@ -1,0 +1,47 @@
+=== ClothingStore Lab 3 Demo ===
+Entity Framework Core. SQLite. Repository. CRUD service.
+
+1. Parallel creation of 1000 PoloShirtModel objects into SQLite database
+Created products in database: 1000
+
+2. LINQ statistics from database data
+Min price: 900 UAH
+Max price: 1850 UAH
+Average price: 1375.00 UAH
+Min stock: 1
+Max stock: 30
+Average stock: 15.50
+
+3. Pagination example: page 2, amount 5
+6. Generated Polo #6 | Navy | L | 1200 UAH | Buttons
+7. Generated Polo #7 | Graphite | XL | 1250 UAH | Zipper
+8. Generated Polo #8 | White | S | 1300 UAH | Buttons
+9. Generated Polo #9 | Black | M | 1350 UAH | Zipper
+10. Generated Polo #10 | Navy | L | 1400 UAH | Buttons
+
+4. Read, update and remove through EF CRUD service
+Read product: Generated Polo #1 | Black | M | 950 UAH
+Updated product price: 1050 UAH
+Products after remove: 999
+
+5. Relationships: one-to-one, one-to-many and many-to-many
+Customer created: Ivan Petrenko, profile address: Poltava, Nova Poshta #1
+Order created: #1, items: 2, total: 2050 UAH
+Tag created: Premium basic, related products: 3
+
+6. Synchronization primitives from previous lab
+lock counter result: 1000
+Semaphore completed operations: 10
+AutoResetEvent result value: 100
+
+7. Database tables count
+Products table: 999
+PoloShirts table: 999
+Customers table: 1
+CustomerProfiles table: 1
+Orders table: 1
+OrderItems table: 2
+ProductTags table: 1
+
+SQLite database file: database/clothing_store_lab3.db
+Demo finished successfully.
