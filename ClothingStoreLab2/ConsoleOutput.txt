@@ -1,0 +1,40 @@
+=== ClothingStore Lab 2 Demo ===
+Multithreading. Async. IEnumerable. LINQ.
+
+1. Parallel creation of 1000 objects
+Created products: 1000
+
+2. LINQ statistics for numeric properties
+Min price: 900 UAH
+Max price: 1850 UAH
+Average price: 1375.00 UAH
+Min stock: 1
+Max stock: 30
+Average stock: 15.41
+
+3. Pagination example: page 2, amount 5
+Generated Polo #6  | size L  | Navy     | 1200 UAH | stock 7
+Generated Polo #7  | size XL | Graphite | 1250 UAH | stock 8
+Generated Polo #8  | size S  | White    | 1300 UAH | stock 9
+Generated Polo #9  | size M  | Black    | 1350 UAH | stock 10
+Generated Polo #10 | size L  | Navy     | 1400 UAH | stock 11
+
+4. Read, update and remove examples
+Read product: Generated Polo #1, 950 UAH, stock 2
+Updated: True; new price: 1050 UAH
+Removed: True
+Products after remove: 999
+
+5. Save collection to file
+Saved: True
+File path: data/polos_lab2.json
+
+6. IEnumerable example
+Total price of first 10 products: 10600 UAH
+
+7. Synchronization primitives examples
+lock result counter: 1000
+Semaphore result completed operations: 10
+AutoResetEvent result value: 100
+
+Demo finished successfully.
